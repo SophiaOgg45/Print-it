@@ -35,9 +35,9 @@ const slides = [
 	let dots = document.querySelectorAll('.dot');
 	dots.forEach((dot, index) => {
 	  if (index === currentIndex) {
-		dot.classList.add('active');
+		dot.classList.add('dot_selected');
 	  } else {
-		dot.classList.remove('active');
+		dot.classList.remove('dot_selected');
 	  }
 	});
   }
@@ -70,7 +70,7 @@ const slides = [
 	dot.classList.add('dot');
   
 	if (compteur === 0) {
-	  dot.classList.add('active');
+	  dot.classList.add('dot_selected');
 	}
   
 	dot.addEventListener('click', function () {
